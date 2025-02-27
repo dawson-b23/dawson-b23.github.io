@@ -8,7 +8,7 @@
 
 /* NAVBAR SECTION */
 .navbar {
-    background: #03698f;
+    background: #282828; /* Gruvbox bg */
     height: 80px;
     display: flex;
     justify-content: center;
@@ -16,7 +16,6 @@
     font-size: 19px;
     position: sticky;
     top: 0;
-    /* will ensure that navbar is always at the top of the page*/
     z-index: 999;
 }
 
@@ -32,8 +31,8 @@
 }
 
 #navbar__logo {
-    background-color: #0098ff;
-    background-image: linear-gradient(to top, #860037 0%, #f0ebe3 100%);
+    background-color: #d79921; /* Gruvbox yellow */
+    background-image: linear-gradient(to top, #b16286 0%, #ebdbb2 100%); /* Purple to fg */
     background-size: 100%;
     -webkit-background-clip: text;
     -moz-background-clip: text;
@@ -62,7 +61,7 @@
 }
 
 .navbar__links { 
-    color: #f0ebe3;
+    color: #ebdbb2; /* Gruvbox fg */
     display: flex;
     align-items: center;
     justify-content: center;
@@ -90,17 +89,17 @@
     border: none;
     outline: none;
     border-radius: 5px;
-    background-color: #860037;
-    color: #f0ebe3;
+    background-color: #b16286; /* Gruvbox purple */
+    color: #ebdbb2; /* Gruvbox fg */
 }
 
 .button:hover {
-    background: #adbcc1;
+    background: #a89984; /* Gruvbox gray */
     transition: all 0.3s ease;
 }
 
 .navbar__links:hover {
-    color: #860037;
+    color: #d79921; /* Gruvbox yellow */
     transition: all 0.3s ease;
 }
 
@@ -125,14 +124,13 @@
         top: -1000px;
         opacity: 0;
         transition: all 0.5s ease;
-        /* viewport height */
         height: 50vh;
         z-index: -1;
-        background: #03698f;
+        background: #282828; /* Gruvbox bg */
     }
 
     .navbar__menu.active {
-        background: #03698f;
+        background: #282828; /* Gruvbox bg */
         top: 100%;
         opacity: 1;
         transition: all 0.5s ease;
@@ -150,7 +148,7 @@
         height: 3px;
         margin: 5px auto;
         transition: all 0.5s ease-in-out;
-        background: #f0ebe3;
+        background: #ebdbb2; /* Gruvbox fg */
     }
 
     .navbar__item {
@@ -204,7 +202,7 @@
 
 /* MAIN PAGE CSS */
 .main {
-    background-color: #f0ebe3;
+    background-color: #282828; /* Gruvbox bg */
 }
 
 .main__container {
@@ -222,8 +220,8 @@
 
 .main__content h1 {
     font-size: 6rem;
-    background-color: #860037;
-    background-image: linear-gradient(to top, #860037 0%, #f0ebe3 100%);
+    background-color: #b16286; /* Gruvbox purple */
+    background-image: linear-gradient(to top, #b16286 0%, #ebdbb2 100%); /* Purple to fg */
     background-size: 100%;
     -webkit-background-clip: text;
     -moz-background-clip: text;
@@ -233,7 +231,7 @@
 
 .main__content h2 {
     font-size: 3rem;
-    background-image: linear-gradient(to right, #03698f 0%, #f0ebe3 100%);
+    background-image: linear-gradient(to right, #458588 0%, #ebdbb2 100%); /* Blue to fg */
     background-size: 100%;
     -webkit-background-clip: text;
     -moz-background-clip: text;
@@ -242,7 +240,7 @@
 }
 
 .main__content p {
-    background-image: linear-gradient(to bottom, #229da7 0%, #f0ebe3 120%);
+    background-image: linear-gradient(to bottom, #689d6a 0%, #ebdbb2 120%); /* Aqua to fg */
     background-size: 100%;
     -webkit-background-clip: text;
     -moz-background-clip: text;
@@ -255,12 +253,12 @@
 
 .main__btn {
     font-size: 1rem;
-    background-image: linear-gradient(to bottom, #860037 0%, #f0ebe3 100%);
+    background-image: linear-gradient(to bottom, #b16286 0%, #ebdbb2 100%); /* Purple to fg */
     margin-top: 1rem;
     padding: 14px 32px;
     border: none;
     border-radius: 4px;
-    color: #f0ebe3;
+    color: #ebdbb2; /* Gruvbox fg */
     cursor: pointer;
     position: relative;
     transition: all 0.5s;
@@ -270,7 +268,7 @@
 .main__btn a {
     position: relative;
     z-index: 2;
-    color: #f0ebe3;
+    color: #ebdbb2; /* Gruvbox fg */
     text-decoration: none;
 }
 
@@ -281,13 +279,13 @@
     left: 0;
     width: 0;
     height: 100%;
-    background: #03698f;
+    background: #458588; /* Gruvbox blue */
     transition: all 0.3s;
     border-radius: 4px;
 }
 
 .main__btn:hover {
-    color: #f0ebe3;
+    color: #ebdbb2; /* Gruvbox fg */
 }
 
 .main__btn:hover:after {
@@ -301,7 +299,6 @@
 #main__img {
     height: 80%;
     width: 80%;
-
 }
 
 /* MOBILE RESPONSIVENESS */
@@ -338,7 +335,7 @@
 
 /* FOOTER */
 .footer__container {
-    background-color: #f0ebe3;
+    background-color: #282828; /* Gruvbox bg */
     padding: 5rem 0;
     display: flex;
     flex-direction: column;
@@ -372,17 +369,17 @@
 }
 
 .footer__link--items > h2 {
-    color: #860037;
+    color: #b16286; /* Gruvbox purple */
 }
 
 .footer__link--items a {
-    color: #03698f;
+    color: #458588; /* Gruvbox blue */
     text-decoration: none;
     margin-bottom: 0.5rem;
 }
 
 .footer__link--items a:hover {
-    color: #860037;
+    color: #d79921; /* Gruvbox yellow */
     transition: 0.3s ease-out;
 }
 
@@ -391,6 +388,4 @@
     .footer__links {
         padding-top: 2rem;
     }
-
-
 }
